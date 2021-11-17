@@ -1,6 +1,7 @@
 # Project 3 Backend - JobPug - JobPug is here to help you keep track of jobs you've applied and would like to apply to
 
-![JobPug logo](jobpug_logo_white_background_.png "JobPug")
+![jobpug_logo_white_background_](https://user-images.githubusercontent.com/86563943/142107209-1d254244-9ab4-4320-965c-11527d7e1582.png)
+
 
 
 Heroku Deploy Link:
