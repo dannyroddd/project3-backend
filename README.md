@@ -24,7 +24,7 @@ Heroku Deploy Link:
 ### Features
 1. User Authentication. Creating Accounts and Logging in and Logging out.
 2. Full CRUD functionality. Create Jobs that have been applied to, Read Job details and information, Update and edit Jobs/Application Status, Delete Jobs.
-
+3. View and change status of job applications (applied, interviewing, rejected)
 
 
 ## Dependencies
