@@ -4,6 +4,7 @@
 
 
 
+
 Heroku Deploy Link:
 
 
@@ -36,7 +37,7 @@ Heroku Deploy Link:
     company: String,
     position: String,
     location: String,
-    date: String,
+
     url: String
 }
 
