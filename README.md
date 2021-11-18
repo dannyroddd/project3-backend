@@ -1,6 +1,9 @@
-# Project 3 Backend - JobPug - JobPug is here to help you keep track of jobs you've applied and would like to apply to
+# Project 3 Backend - JobPug - JobPug is here to help you keep track of jobs you've applied to and would like to apply to
 
-![JobPug logo](jobpug_logo_white_background_.png "JobPug")
+![jobpug_logo_white_background_](https://user-images.githubusercontent.com/86563943/142107209-1d254244-9ab4-4320-965c-11527d7e1582.png)
+
+
+
 
 Heroku Deploy Link:
 
@@ -22,7 +25,7 @@ Heroku Deploy Link:
 ### Features
 1. User Authentication. Creating Accounts and Logging in and Logging out.
 2. Full CRUD functionality. Create Jobs that have been applied to, Read Job details and information, Update and edit Jobs/Application Status, Delete Jobs.
-
+3. View and change status of job applications (applied, interviewing, rejected)
 
 
 ## Dependencies
@@ -34,9 +37,7 @@ Heroku Deploy Link:
     company: String,
     position: String,
     location: String,
-    Date: String,
-    url: String
-}
+
 
 ## Routes
 1. GET "/" - Index route - Index of all Jobs
