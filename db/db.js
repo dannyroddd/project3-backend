@@ -7,7 +7,8 @@ const {MONGODBURI} = process.env
 mongoose.connect(MONGODBURI, config)
 
 
-//database event logs
+//database event logs 
+//
 
 mongoose.connection
 .on("open", () => console.log("Connected to Mongo"))
