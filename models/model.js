@@ -7,7 +7,7 @@ const jobSchema = new Schema({
     url: String,
     date: String,
     location: String,
-    status: Boolean
+    status: String
 
 }, {timestamps: true})
 
