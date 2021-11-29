@@ -7,6 +7,7 @@ const morgan = require("morgan")
 const mongoose = require("./db/db")
 const AuthRouter = require("./controllers/user")
 const JobRouter = require("./controllers/jobs")
+const AppliedJobRouter = require("./controllers/appliedjobs")
 const auth = require("./auth")
 
 //middleware 
@@ -22,6 +23,8 @@ app.get("/", auth, (req, res) =>{
 app.use("/auth", AuthRouter)
 
 app.use("/job", JobRouter)
+
+app.use("/appliedjob", AppliedJobRouter)
 
 //server listener 
 
