@@ -28,6 +28,18 @@ router.post("/", auth, async (req, res)=>{
     }
 })
 
+router.get("/:id", auth, async (req, res)=>{
+    try{
+        const {username} = req.payload
+        res.status(200).json(await AppliedJob.find({username}))
+        const {id} = req.params
+        res.status(200).json(await AppliedJob.findOne(id))
+    } 
+    catch(error){
+        res.status(400).json({error})
+    }
+})
+
 //update
 router.put("/:id", auth, async (req, res)=>{
     try{

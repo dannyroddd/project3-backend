@@ -16,6 +16,23 @@ router.get("/", auth, async (req, res)=>{
     }
 })
 
+ // const {username} = req.payload
+  //       req.body.username = username
+  //       const {id} = req.params
+   //      res.status(200).json(await Job.findByIdAndUpdate(id, req.body, {new: true}))
+// get record by id
+router.get("/:id", auth, async (req, res)=>{
+    try{
+        const {username} = req.payload
+        res.status(200).json(await Job.find({username}))
+        const {id} = req.params
+        res.status(200).json(await Job.findOne(id))
+    } 
+    catch(error){
+        res.status(400).json({error})
+    }
+})
+
 //create
 router.post("/", auth, async (req, res)=>{
     try{
